@@ -1,0 +1,120 @@
+/* Paleta cálida */
+body {
+    background-color: #f8f6f3;
+    color: #3b2f25;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 72px;
+    padding: 0 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header .logo a,
+.header .nav a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.header.scrolled {
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.header.scrolled .logo a,
+.header.scrolled .nav a {
+    color: #111111;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.nav a {
+    margin-left: 32px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    height: 100vh;
+    padding-top: 72px;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    background-image: url("../../assets/img/hero-melamina.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(59, 47, 37, 0.45);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    max-width: 480px;
+    line-height: 1.6;
+    color: #eaeaea;
+}
+
+/* Intro */
+.intro {
+    padding: 120px 10%;
+}
+
+.intro p {
+    max-width: 720px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* Galería */
+.gallery {
+    padding: 0 10% 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+/* Footer */
+.footer {
+    padding: 48px;
+    text-align: center;
+    font-size: 14px;
+    color: #6b5b4b;
+}
